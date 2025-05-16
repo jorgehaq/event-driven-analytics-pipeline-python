@@ -11,3 +11,6 @@ logs:
 
 ps:
 	docker-compose ps
+
+test:
+	curl --fail http://localhost:8000/health && echo "" && echo "✅ Servicio FASTAPI activo" || (echo "" && echo "❌ ERROR: FastAPI no respondió")
