@@ -1,0 +1,5 @@
+### Verificar estado FastAPI
+GET http://localhost:8000/health
+
+### Probar envío de tarea Celery
+GET http://localhost:8000/test-task
